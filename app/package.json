@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/DeborahGaeb/EISWS1617Gaeb#readme",
   "dependencies": {
-    "jquery": "^3.1.1"
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "socket.io": "^1.5.0",
+    "socket.io-client": "^1.5.0"
   }
 }

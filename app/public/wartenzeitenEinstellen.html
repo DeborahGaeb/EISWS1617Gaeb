@@ -13,7 +13,7 @@
         <tr><td>Attraktionen</td><td> Income People </td> <td> Programm /Bahnen </td></tr> 
         <tr>
             <td>Papageienflug</td>
-            <td><label for="incomePapageienflug"><input id="incomePapageienflug" name="incomePapageienflug" type="number"></label></td>
+            <td><label for="incomePapageienflug"><input id="incomePapageienflug" name="incomePapageienflug" type="number"   class="js-msg_input"></label></td>
             <td><select><optgroup id:"prgrammPapageienFlug", name="prgrammPapageienFlug">             
                     <option label="1">1</option>
                     <option label="2">2</option>
@@ -176,9 +176,11 @@
         
     </body>
 </html>
-<script src="/socket.io/socket.io.js">
-    //income sind die Besucher, die in die Attraltion rein gehen.
-    //Programm ist die Laenge einer Fahrt oder die Anzahl der Fahrzeuge auf der Bahn. 
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    /*income sind die Besucher, die in die Attraltion rein gehen.Programm ist die Laenge einer Fahrt oder die Anzahl der Fahrzeuge auf der Bahn. */
+    var send_input = document.querySelector('js-send_input');
+    var msg_input = document.querySelector('js-msg_input');
     
     var incomePapageienflug = document.getElementById('incomePapageienflug');
     var programmPapageienflug = document.getElementById('programmPapageienflug');

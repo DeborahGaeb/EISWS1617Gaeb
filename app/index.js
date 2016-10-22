@@ -14,11 +14,8 @@ var bodyParser  = require('body-parser');
 var jsonParser  = bodyParser.json();
                   app.use(bodyParser.json());
 
-app.get('/chat', function (req, res) {
-    res.sendFile(__dirname + '/public/chat.html');
-});
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/chat.html'));
 
 var clientSockets = [];
 

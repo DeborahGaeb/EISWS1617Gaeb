@@ -37,13 +37,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TpR-DG-Sql">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TpR-DG-Sql">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="570"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdy-ua-Ram">
+                                <rect key="frame" x="263" y="28" width="98" height="30"/>
+                                <state key="normal" title="Mein Standort"/>
+                                <connections>
+                                    <action selector="buttenMeinePositionAnzeigen:" destination="914-Gq-HV8" eventType="touchDragOutside" id="yjt-6c-Qja"/>
+                                    <action selector="buttonMeinStandort:" destination="914-Gq-HV8" eventType="touchUpInside" id="kd8-CR-ybJ"/>
+                                    <action selector="buttonMeinStandortBestimmen:" destination="914-Gq-HV8" eventType="touchUpInside" id="h6C-Yv-6r9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Parkplan" id="acP-jF-qMy"/>
+                    <tabBarItem key="tabBarItem" title="Parkplan" image="Parkplan.png" id="acP-jF-qMy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -88,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notfall" id="63L-hc-Bhz"/>
+                    <tabBarItem key="tabBarItem" tag="4" title="Notfall" image="second" id="63L-hc-Bhz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -107,9 +116,24 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3ws-d9-d3e">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="KJw-iB-wue"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3ws-d9-d3e" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="2CR-Aq-yiy"/>
+                            <constraint firstItem="3ws-d9-d3e" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="Sqg-ab-2tx"/>
+                            <constraint firstAttribute="trailing" secondItem="3ws-d9-d3e" secondAttribute="trailing" id="V0V-2L-OmZ"/>
+                            <constraint firstItem="3ws-d9-d3e" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="qUR-v7-iAm"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Wartezeiten" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Wartezeiten" image="wartezeiten.png" id="cPa-gy-q4n"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -141,7 +165,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Parkplan.png" width="50" height="50"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="wartezeiten.png" width="50" height="50"/>
     </resources>
 </document>

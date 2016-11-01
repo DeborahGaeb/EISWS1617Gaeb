@@ -8,6 +8,13 @@
 
 import UIKit
 
+/* Diese App wird im Rahmen von Entwicklung interaktiver Systeme erstellt
+    Die Farben und die Funktionen sind zur Zeit die Funktionstüchtig und nicht alle Funktionen werden zum ersten Prototype fertig vorliegen.
+    erstellt werden nur!
+ */
+
+
+
 class FirstViewController: UIViewController {
 
     override func viewDidLoad() {

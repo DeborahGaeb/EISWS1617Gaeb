@@ -18,6 +18,10 @@
 		401696451DC8A20400E1DF38 /* Parkplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401696441DC8A20400E1DF38 /* Parkplan.swift */; };
 		401696491DC8A4BD00E1DF38 /* Notfallfunktion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401696481DC8A4BD00E1DF38 /* Notfallfunktion.swift */; };
 		4016964B1DC8A6FC00E1DF38 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016964A1DC8A6FC00E1DF38 /* Chat.swift */; };
+		4016964D1DC8C69900E1DF38 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4016964C1DC8C69900E1DF38 /* MapKit.framework */; };
+		4035CCEA1DC8DA5100EFE298 /* Parkplan.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCE71DC8DA5100EFE298 /* Parkplan.png */; };
+		4035CCEB1DC8DA5100EFE298 /* sos.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCE81DC8DA5100EFE298 /* sos.png */; };
+		4035CCEC1DC8DA5100EFE298 /* wartezeiten.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCE91DC8DA5100EFE298 /* wartezeiten.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		401696441DC8A20400E1DF38 /* Parkplan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parkplan.swift; sourceTree = "<group>"; };
 		401696481DC8A4BD00E1DF38 /* Notfallfunktion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notfallfunktion.swift; sourceTree = "<group>"; };
 		4016964A1DC8A6FC00E1DF38 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		4016964C1DC8C69900E1DF38 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4035CCE71DC8DA5100EFE298 /* Parkplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Parkplan.png; sourceTree = SOURCE_ROOT; };
+		4035CCE81DC8DA5100EFE298 /* sos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sos.png; sourceTree = SOURCE_ROOT; };
+		4035CCE91DC8DA5100EFE298 /* wartezeiten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wartezeiten.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4016964D1DC8C69900E1DF38 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,7 @@
 		401696081DC8A0C400E1DF38 = {
 			isa = PBXGroup;
 			children = (
+				4016964C1DC8C69900E1DF38 /* MapKit.framework */,
 				401696131DC8A0C400E1DF38 /* AdventureWorldApp */,
 				4016962A1DC8A0C400E1DF38 /* AdventureWorldAppTests */,
 				401696351DC8A0C400E1DF38 /* AdventureWorldAppUITests */,
@@ -115,6 +125,9 @@
 				4016961D1DC8A0C400E1DF38 /* Assets.xcassets */,
 				4016961F1DC8A0C400E1DF38 /* LaunchScreen.storyboard */,
 				401696221DC8A0C400E1DF38 /* Info.plist */,
+				4035CCE71DC8DA5100EFE298 /* Parkplan.png */,
+				4035CCE81DC8DA5100EFE298 /* sos.png */,
+				4035CCE91DC8DA5100EFE298 /* wartezeiten.png */,
 			);
 			path = AdventureWorldApp;
 			sourceTree = "<group>";
@@ -206,6 +219,11 @@
 					401696101DC8A0C400E1DF38 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = L529BG38CT;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					401696261DC8A0C400E1DF38 = {
 						CreatedOnToolsVersion = 7.3;
@@ -244,9 +262,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4035CCEC1DC8DA5100EFE298 /* wartezeiten.png in Resources */,
+				4035CCEA1DC8DA5100EFE298 /* Parkplan.png in Resources */,
 				401696211DC8A0C400E1DF38 /* LaunchScreen.storyboard in Resources */,
 				4016961E1DC8A0C400E1DF38 /* Assets.xcassets in Resources */,
 				4016961C1DC8A0C400E1DF38 /* Main.storyboard in Resources */,
+				4035CCEB1DC8DA5100EFE298 /* sos.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AOOLoesung-EISWS1617Gaeb.AdventureWorldApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -433,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AOOLoesung-EISWS1617Gaeb.AdventureWorldApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -501,6 +524,7 @@
 				4016963D1DC8A0C400E1DF38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4016963E1DC8A0C400E1DF38 /* Build configuration list for PBXNativeTarget "AdventureWorldAppTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +533,7 @@
 				401696401DC8A0C400E1DF38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		401696411DC8A0C400E1DF38 /* Build configuration list for PBXNativeTarget "AdventureWorldAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +542,7 @@
 				401696431DC8A0C400E1DF38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

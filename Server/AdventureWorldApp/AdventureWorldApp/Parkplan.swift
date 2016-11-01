@@ -9,20 +9,26 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class Parkplan: UIViewController, MKMapViewDelegate {
+class Parkplan: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     
     @IBOutlet weak var mapView: MKMapView!
-        
-        override func viewDidLoad() {
+    
+    let locationManager = CLLocationManager()
+    
+    
+    
+    override func viewDidLoad() {
             super.viewDidLoad()
-            
-            mapView.delegate = self
-            
-            let adventureWorld = MKCoordinateRegionMake(CLLocationCoordinate2DMake(51.52007, 7.5621), MKCoordinateSpanMake(0.01, 0.01))
-            
-            mapView.setRegion(adventureWorld, animated: true)
+        
+        
+            self.locationManager.delegate = self
+            self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            self.locationManager.requestWhenInUseAuthorization()
+            self.locationManager.startUpdatingLocation()
+            self.mapView.showsUserLocation = true
         }
         
         override func didReceiveMemoryWarning() {
@@ -35,13 +41,27 @@ class Parkplan: UIViewController, MKMapViewDelegate {
             mapView.camera.pitch = 60
             mapView.camera.heading = 180
         }
-        /*
-         func meinStandpunkt() -> (String) {
-         
-         return "meinStandpunkt"
-         }
-         */
-        
-        
+    
+        func locationManager( manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            //Meine letzte Position
+            let location = locations.last
+            
+            //Meine Position in der Mitte anzeigen
+            let center = CLLocationCoordinate2DMake(location!.coordinate.latitude, location!.coordinate.longitude)
+            
+            
+            let region = MKCoordinateRegion(center: center,span: MKCoordinateSpan(latitudeDelta:  1.0, longitudeDelta:  1.0))
+            
+            self.mapView.setRegion(region, animated: true)
+                
+            self.locationManager.stopUpdatingLocation()
+            
+                
+        }
+    @IBAction func buttenMeinePositionAnzeigen(sender: UIButton) {
+     //   mapView!.showsUserLocation
     }
-
+        func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("Fehler: " + (error).localizedDescription)
+    }
+}

@@ -9,7 +9,7 @@
 
 import UIKit
 
-class Nachfallfunktionen: UIViewController {
+class Notfallfunktionen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

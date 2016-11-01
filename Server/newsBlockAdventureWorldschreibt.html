@@ -1,0 +1,40 @@
+<!DOCTYPE HTML5>
+<html lange ="de">
+    <head>
+        <title> Einstellen der Wartenzeiten  </title>
+        <meta http-equiv ="content-type" content = "text/html charset=UTF-8">
+        
+        <title> Wartenzeiten erstellen </title>
+    </head>
+    <body>
+        <script type="text/javascript" src="http://localhost:8000/faye/client.js"></script> 
+        <h1> News Blockk des Adventure World</h1>
+        <lable for="name"> Name </lable>
+        <input id= "name" type="text"> 
+        
+        <lable for="content"> Content </lable>
+        <input id="content" type="text">
+        
+        <button id="sendBtn" type="button" onClick="publishMsg()"> Senden </button>
+    
+    <script> 
+    var client = new faye.Client("http://localhost:8000/faye")
+    
+    function  publishMsg(){
+        var publication = client.publish('/', {
+            var publication = client.publish('/news', { 
+              "name": document.getElementById('name');
+            "content": document.getElementById('content');
+        });
+        publish.then(
+            function(){
+                console.log("Nachricht wurde gesendet");
+            }, 
+
+        function(){
+                console.log("Nachricht wurde nicht gesendet");
+            }
+        );
+    });
+    </script>
+</body>

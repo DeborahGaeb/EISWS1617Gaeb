@@ -22,6 +22,7 @@
 		4035CCEA1DC8DA5100EFE298 /* Parkplan.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCE71DC8DA5100EFE298 /* Parkplan.png */; };
 		4035CCEB1DC8DA5100EFE298 /* sos.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCE81DC8DA5100EFE298 /* sos.png */; };
 		4035CCEC1DC8DA5100EFE298 /* wartezeiten.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCE91DC8DA5100EFE298 /* wartezeiten.png */; };
+		4035CCEE1DC904F600EFE298 /* newsBlog.html in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCED1DC904F600EFE298 /* newsBlog.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		4035CCE71DC8DA5100EFE298 /* Parkplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Parkplan.png; sourceTree = SOURCE_ROOT; };
 		4035CCE81DC8DA5100EFE298 /* sos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sos.png; sourceTree = SOURCE_ROOT; };
 		4035CCE91DC8DA5100EFE298 /* wartezeiten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wartezeiten.png; sourceTree = SOURCE_ROOT; };
+		4035CCED1DC904F600EFE298 /* newsBlog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = newsBlog.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				401696141DC8A0C400E1DF38 /* AppDelegate.swift */,
 				401696161DC8A0C400E1DF38 /* FirstViewController.swift */,
+				4035CCED1DC904F600EFE298 /* newsBlog.html */,
 				401696181DC8A0C400E1DF38 /* SecondViewController.swift */,
 				401696441DC8A20400E1DF38 /* Parkplan.swift */,
 				401696481DC8A4BD00E1DF38 /* Notfallfunktion.swift */,
@@ -266,6 +269,7 @@
 				4035CCEA1DC8DA5100EFE298 /* Parkplan.png in Resources */,
 				401696211DC8A0C400E1DF38 /* LaunchScreen.storyboard in Resources */,
 				4016961E1DC8A0C400E1DF38 /* Assets.xcassets in Resources */,
+				4035CCEE1DC904F600EFE298 /* newsBlog.html in Resources */,
 				4016961C1DC8A0C400E1DF38 /* Main.storyboard in Resources */,
 				4035CCEB1DC8DA5100EFE298 /* sos.png in Resources */,
 			);

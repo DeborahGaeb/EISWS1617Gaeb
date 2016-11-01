@@ -65,47 +65,6 @@ app.post('/', function(request, response){
     );
 });
 */
-/*
-//Chat-Client
-
-app.use(express.static(__dirname + '/public'));
-
-
-var clientSockets = [];
-
-
-app.use(bodyParser.json());
-
-io.on('connection', function(socket) {
-    
-    clientSockets.push(socket);
-    console.log("Verbindung hergestellt.");
-    
-    socket.on('message', function(data){
-        console.log('msg', data);
-    
-    //Data = inhalt
-    clientSockets.forEach(function (clientSocket) {
-         clientSocket.send(data);
-        })
-    });
-    
-    //Sockenclient wird bei Verbindungsabbruch von der Socket Liste entfernt
-    socket.on('disconnext', function() {
-        console.log("Verbindung wurde abgebrochen!");
-        clientSockets.splice(clientSockets.indexOf(socket), 1);
-    });
-}); 
-
-
-
-*/
-
-/*
-app.get('/wartenzeitenEinstellen', function (req, res) {
-    res.sendFile(__dirname + '/wartenzeitenEinstellen.html');
-});
-*/
     
 server.listen (PORT, function () { 
         console.log("Der Server laeuft auf Port" + PORT);

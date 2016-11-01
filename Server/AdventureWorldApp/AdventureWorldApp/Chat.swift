@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import JavaScriptCore
+
 
 class Chat: UIViewController {
     override func viewDidLoad() {
@@ -18,4 +20,6 @@ class Chat: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
+    
+    
 }

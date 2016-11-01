@@ -3,9 +3,11 @@
     <head>
         <title> Einstellen der Wartenzeiten  </title>
         <meta http-equiv ="content-type" content = "text/html charset=UTF-8">
-        <script type="text/javascript" src="http://localhost:8000/faye/index.js"></script> 
+        
+        <title> Wartenzeiten erstellen </title>
     </head>
     <body>
+        <script type="text/javascript" src="http://localhost:8000/faye/client.js"></script> 
         <h1> Simulation der Sensoren am Eingang der Bahn und Anzahl der Bahnen auf der Strecke </h1>
     <table>
         <tr><td>Attraktionen</td><td> Income People </td> <td> Programm /Bahnen </td></tr> 
@@ -168,7 +170,7 @@
         </tr>
         <tr> 
             <td></td>
-            <td> <button type="button" id="button" onClick=publishMsg()> Aktualisieren</button></td><td> </td>
+            <td> <button type="button" id="sendBtn" onClick=publishMsg()> Aktualisieren</button></td><td> </td>
         </tr>
     </table>
       
@@ -181,62 +183,61 @@
     
     function  publishMsg(){
         var publication = client.publish('/', {
+            var publication = client.publish('/news', { 
+                'incomePapageienflug': document.getElementById('incomePapageienflug'),
+                'programmPapageienflug': document.getElementById('programmPapageienflug'),
 
-        'incomePapageienflug': document.getElementById('incomePapageienflug'),
-        'programmPapageienflug': document.getElementById('programmPapageienflug'),
+                'incomeWurmexpress': document.getElementById('incomeWurmexpress'),
+                 'programmWurmexpress': document.getElementById('programmWurmexpress'),
 
-        'incomeWurmexpress': document.getElementById('incomeWurmexpress'),
-         'programmWurmexpress': document.getElementById('programmWurmexpress'),
+                'incomeMagischeFlugraede:': document.getElementById('incomeMagischeFlugraede'),
+                'programmMagischeFlugraede': document.getElementById('programmMagischeFlugraede'),
 
-        'incomeMagischeFlugraede:': document.getElementById('incomeMagischeFlugraede'),
-        'programmMagischeFlugraede': document.getElementById('programmMagischeFlugraede'),
+                'incomeHuepfendeFroesche': document.getElementById('incomeHuepfendeFroesche'),
+                'programmHuepfendeFroesche': document.getElementById('programmHuepfendeFroesche'),
 
-        'incomeHuepfendeFroesche': document.getElementById('incomeHuepfendeFroesche'),
-        'programmHuepfendeFroesche': document.getElementById('programmHuepfendeFroesche'),
+                'incomeRaketenFlugDelux': document.getElementById('incomeRaketenFlugDelux'),
+                'programmRaketenFlugDelux': document.getElementById('programmRaketenFlugDelux'),
 
-        'incomeRaketenFlugDelux': document.getElementById('incomeRaketenFlugDelux'),
-        'programmRaketenFlugDelux': document.getElementById('programmRaketenFlugDelux'),
+                'incomeDasVerrueckteHotelTatuetata': document.getElementById('incomeDasVerrueckteHotelTatuetata'),
+                'programmDasVerrueckteHotelTatuetata': document.getElementById('programmDasVerrueckteHotelTatuetata'),
 
-        'incomeDasVerrueckteHotelTatuetata': document.getElementById('incomeDasVerrueckteHotelTatuetata'),
-        'programmDasVerrueckteHotelTatuetata': document.getElementById('programmDasVerrueckteHotelTatuetata'),
+                'incomeMaeuseJagt': document.getElementById('incomeMaeuseJagt'),
+                'programmMaeuseJagt': document.getElementById('programmMaeuseJagt'),
 
-        'incomeMaeuseJagt': document.getElementById('incomeMaeuseJagt'),
-        'programmMaeuseJagt': document.getElementById('programmMaeuseJagt'),
+                'incomeHistorischePferdekarussell': document.getElementById('incomeHistorischePferdekarussell'),
+                'programmHistorischePferdekarussell': document.getElementById('programmHistorischePferdekarussell'),
 
-        'incomeHistorischePferdekarussell': document.getElementById('incomeHistorischePferdekarussell'),
-        'programmHistorischePferdekarussell': document.getElementById('programmHistorischePferdekarussell'),
+                'incomeGeisterFlug': document.getElementById('incomeGeisterFlug'),
+                'programmGeisterFlug': document.getElementById('programmGeisterFlug'),
 
-        'incomeGeisterFlug': document.getElementById('incomeGeisterFlug'),
-        'programmGeisterFlug': document.getElementById('programmGeisterFlug'),
+                'incomeSpookyCastle': document.getElementById('incomeSpookyCastle'),
+                'programmSpookyCastle': document.getElementById('programmSpookyCastle'),
 
-        'incomeSpookyCastle': document.getElementById('incomeSpookyCastle'),
-        'programmSpookyCastle': document.getElementById('programmSpookyCastle'),
+                'incomeXiuhcoatl': document.getElementById('incomeXiuhcoatl'),
+                 'programmXiuhcoatl': document.getElementById('programmXiuhcoatl'),
 
-        'incomeXiuhcoatl': document.getElementById('incomeXiuhcoatl'),
-         'programmXiuhcoatl': document.getElementById('programmXiuhcoatl'),
+                'incomeDaemonensRide': document.getElementById('incomeDaemonensRide'),
+                'programmDaemonensRide': document.getElementById('programmDaemonensRide'),
 
-        'incomeDaemonensRide': document.getElementById('incomeDaemonensRide'),
-        'programmDaemonensRide': document.getElementById('programmDaemonensRide'),
+                'incomeIndiane' : document.getElementById('incomeIndiane'),
+                'programmIndiane': document.getElementById('programmIndiane'),
 
-        'incomeIndiane' : document.getElementById('incomeIndiane'),
-        'programmIndiane': document.getElementById('programmIndiane'),
-
-        'incomeArizonasExpress':  document.getElementById('incomeArizonasExpress'),
-        'prgrammArizonasExpress': document.getElementById('prgrammArizonasExpress'),
-    });
+                'incomeArizonasExpress':  document.getElementById('incomeArizonasExpress'),
+                'prgrammArizonasExpress': document.getElementById('prgrammArizonasExpress'),
+            });
     
-    
-    publish.then(
+        publish.then(
+            function(){
+                console.log("Nachricht wurde gesendet");
+            }, 
+
         function(){
-            console.log("Nachricht wurde gesendet");
-        }, 
-           
-    function(){
-            console.log("Nachricht wurde nicht gesendet");
-        }
-    )
+                console.log("Nachricht wurde nicht gesendet");
+            }
+        );
+ });
     
-   
  </script>
 </body>
 </html>

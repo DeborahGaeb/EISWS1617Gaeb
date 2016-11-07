@@ -1,0 +1,26 @@
+<!DOCTYPE HTML5>
+<html>
+    <body>
+        <textarea class="js-txtarea txtrea"></textarea>
+        <input text="text" value="" class="js-msg_input msg_input" />
+        <input type="button" value="Senden" class="js-send_input send_input"/>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var send_input = document.querySelector('.js-send_input');
+            var msg_input = document.querySelector('.js-msg_input');
+            var txtares = document.querySelector('.js-txtarea');
+            var socket = io.connect('http://localhost:8000');
+            socket.on('massage', function(msg){
+                      txtares.value = msg.value + "\n" + txtares.value;
+                      })
+                      
+                      send_input.addEventListener('click', function(e){
+                            var msg = msg_input.value;
+                            msg_input.value = "";
+                            socket.send(msg);
+                    });
+                                                  
+            </script>
+    </body>
+</html>

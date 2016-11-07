@@ -1,0 +1,16 @@
+<DOCTYPE HTML5!>
+    <html>
+        <body>
+            <h1> News Block</h1>
+            <div id:"massages"></div>
+            <script type="text/javascript" src="http://localhost:8000/faye/main.js"> </script>
+            <script>
+                var client = new faye.Client("http://localhost:8000/faye")
+                
+                var subscribtion = client.subscribe('/news', function(massage){
+                        var div = document.getElementById('massage');
+                            div.innerHTML += "<p> Autor: " + massage.name * "<br> Content: " + massage.content +"</p>";
+                            });
+                </script>
+        </body>
+    </html>

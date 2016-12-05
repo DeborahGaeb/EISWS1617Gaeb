@@ -30,10 +30,9 @@ class Parkplan: UIViewController, MKMapViewDelegate{
         let adventureWorld = MKCoordinateRegionMake(CLLocationCoordinate2DMake(51.0226, 7.56), MKCoordinateSpanMake (0.2, 0.2))
         
         mapView.setRegion(adventureWorld, animated: true)
-    }
-    
         
-    
+    }
+
     private func cameraSetup(){
         mapView.camera.altitude = 1000
         mapView.camera.pitch = 60

@@ -17,11 +17,9 @@
 		401696451DC8A20400E1DF38 /* Parkplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401696441DC8A20400E1DF38 /* Parkplan.swift */; };
 		401696491DC8A4BD00E1DF38 /* Notfallfunktion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401696481DC8A4BD00E1DF38 /* Notfallfunktion.swift */; };
 		4016964B1DC8A6FC00E1DF38 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016964A1DC8A6FC00E1DF38 /* Chat.swift */; };
-		4035CCEA1DC8DA5100EFE298 /* Parkplan.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCE71DC8DA5100EFE298 /* Parkplan.png */; };
-		4035CCEB1DC8DA5100EFE298 /* sos.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCE81DC8DA5100EFE298 /* sos.png */; };
-		4035CCEC1DC8DA5100EFE298 /* wartezeiten.png in Resources */ = {isa = PBXBuildFile; fileRef = 4035CCE91DC8DA5100EFE298 /* wartezeiten.png */; };
 		4056A92C1DC9D1FF00754C50 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4056A92B1DC9D1FF00754C50 /* WebKit.framework */; };
 		4056A9301DC9DBFE00754C50 /* Wartezeiten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056A92F1DC9DBFE00754C50 /* Wartezeiten.swift */; };
+		407609441DF2FAB9007A7A1D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 407609431DF2FAB9007A7A1D /* libsqlite3.tbd */; };
 		4083374B1DD0913B004A98F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4083374A1DD0913B004A98F5 /* Main.storyboard */; };
 		408654841DCCC48D0053F496 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408654831DCCC48D0053F496 /* MapKit.framework */; };
 		40DF54CD1DCC962300C72D87 /* NotfallMelden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DF54CC1DCC962300C72D87 /* NotfallMelden.swift */; };
@@ -62,12 +60,10 @@
 		401696381DC8A0C400E1DF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		401696441DC8A20400E1DF38 /* Parkplan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parkplan.swift; sourceTree = "<group>"; };
 		401696481DC8A4BD00E1DF38 /* Notfallfunktion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notfallfunktion.swift; sourceTree = "<group>"; };
-		4016964A1DC8A6FC00E1DF38 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		4035CCE71DC8DA5100EFE298 /* Parkplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Parkplan.png; sourceTree = SOURCE_ROOT; };
-		4035CCE81DC8DA5100EFE298 /* sos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sos.png; sourceTree = SOURCE_ROOT; };
-		4035CCE91DC8DA5100EFE298 /* wartezeiten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wartezeiten.png; sourceTree = SOURCE_ROOT; };
+		4016964A1DC8A6FC00E1DF38 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Chat.swift; sourceTree = "<group>"; };
 		4056A92B1DC9D1FF00754C50 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4056A92F1DC9DBFE00754C50 /* Wartezeiten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wartezeiten.swift; sourceTree = "<group>"; };
+		407609431DF2FAB9007A7A1D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		4083374A1DD0913B004A98F5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		408654831DCCC48D0053F496 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		40DF54CC1DCC962300C72D87 /* NotfallMelden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotfallMelden.swift; sourceTree = "<group>"; };
@@ -80,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407609441DF2FAB9007A7A1D /* libsqlite3.tbd in Frameworks */,
 				408654841DCCC48D0053F496 /* MapKit.framework in Frameworks */,
 				4056A92C1DC9D1FF00754C50 /* WebKit.framework in Frameworks */,
 			);
@@ -105,6 +102,7 @@
 		401696081DC8A0C400E1DF38 = {
 			isa = PBXGroup;
 			children = (
+				407609431DF2FAB9007A7A1D /* libsqlite3.tbd */,
 				408654831DCCC48D0053F496 /* MapKit.framework */,
 				4056A92B1DC9D1FF00754C50 /* WebKit.framework */,
 				401696131DC8A0C400E1DF38 /* AdventureWorldApp */,
@@ -142,9 +140,6 @@
 				4016961D1DC8A0C400E1DF38 /* Assets.xcassets */,
 				4016961F1DC8A0C400E1DF38 /* LaunchScreen.storyboard */,
 				401696221DC8A0C400E1DF38 /* Info.plist */,
-				4035CCE71DC8DA5100EFE298 /* Parkplan.png */,
-				4035CCE81DC8DA5100EFE298 /* sos.png */,
-				4035CCE91DC8DA5100EFE298 /* wartezeiten.png */,
 			);
 			path = AdventureWorldApp;
 			sourceTree = "<group>";
@@ -281,12 +276,9 @@
 			files = (
 				40F1B91E1DD06F400050A7C3 /* chat.html in Resources */,
 				4000997F1DD08C9D00D9E87D /* newsBlog.html in Resources */,
-				4035CCEC1DC8DA5100EFE298 /* wartezeiten.png in Resources */,
 				4083374B1DD0913B004A98F5 /* Main.storyboard in Resources */,
-				4035CCEA1DC8DA5100EFE298 /* Parkplan.png in Resources */,
 				401696211DC8A0C400E1DF38 /* LaunchScreen.storyboard in Resources */,
 				4016961E1DC8A0C400E1DF38 /* Assets.xcassets in Resources */,
-				4035CCEB1DC8DA5100EFE298 /* sos.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AdventureWorldApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AOOLoesung-EISWS1617Gaeb.AdventureWorldApp";
@@ -464,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AdventureWorldApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AOOLoesung-EISWS1617Gaeb.AdventureWorldApp";

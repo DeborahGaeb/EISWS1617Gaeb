@@ -43,6 +43,13 @@ class Wartezeiten: UIViewController, UITableViewDataSource, UITableViewDelegate{
         "Restaurant a la Plaza"
     ]
     
+    func sortieren (){
+        for _ in 1...attraktionen.count {
+            
+        }
+    }
+    
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 3
     }

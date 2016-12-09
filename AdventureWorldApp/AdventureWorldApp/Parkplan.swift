@@ -17,14 +17,25 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class Parkplan: UIViewController, MKMapViewDelegate{
- 
+class Parkplan: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var segmentcontroler: UISegmentedControl!
+    @IBAction func navigationSegment(sender: UISegmentedControl) {
+        
+        if segmentcontroler.selectedSegmentIndex == 0 {
+            print("Ihr Standpunkt ist.")
+        }
+        if segmentcontroler.selectedSegmentIndex == 1{
+            print("Ohr Markiert")
+        }
+        if segmentcontroler.selectedSegmentIndex == 2{
+            print("meine Route ist")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         mapView.delegate = self
     
         let adventureWorld = MKCoordinateRegionMake(CLLocationCoordinate2DMake(51.0226, 7.56), MKCoordinateSpanMake (0.2, 0.2))
@@ -39,10 +50,5 @@ class Parkplan: UIViewController, MKMapViewDelegate{
         mapView.camera.heading = 180
     }
     
-    
-  /*  @IBAction func buttenMeinePositionAnzeigen(sender: UIButton) {
-        mapView!.showsUserLocation.hashValue
-    }
-  */  
     
 }

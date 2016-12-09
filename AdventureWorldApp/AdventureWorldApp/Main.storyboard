@@ -51,17 +51,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TpR-DG-Sql">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="570"/>
+                                <rect key="frame" x="0.0" y="45" width="375" height="550"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdy-ua-Ram">
-                                <rect key="frame" x="138" y="569" width="98" height="30"/>
-                                <state key="normal" title="Mein Standort"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-fy-JGY">
+                                <rect key="frame" x="36" y="84" width="302" height="29"/>
+                                <segments>
+                                    <segment title="Mein Standort"/>
+                                    <segment title="Markiere den Ort"/>
+                                    <segment title="Route"/>
+                                </segments>
                                 <connections>
-                                    <action selector="buttenMeinePositionAnzeigen:" destination="914-Gq-HV8" eventType="touchDragOutside" id="yjt-6c-Qja"/>
-                                    <action selector="buttonMeinStandort:" destination="914-Gq-HV8" eventType="touchUpInside" id="kd8-CR-ybJ"/>
-                                    <action selector="buttonMeinStandortBestimmen:" destination="914-Gq-HV8" eventType="touchUpInside" id="h6C-Yv-6r9"/>
+                                    <action selector="auswahlSegment:" destination="914-Gq-HV8" eventType="valueChanged" id="Brf-tH-1Us"/>
+                                    <action selector="navigationSegment:" destination="914-Gq-HV8" eventType="valueChanged" id="wFH-e3-8wk"/>
                                 </connections>
-                            </button>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -75,11 +78,46 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapView" destination="TpR-DG-Sql" id="zXw-vq-Xoh"/>
+                        <outlet property="parkPlanSegment" destination="M5f-fy-JGY" id="IVR-Q0-Xpx"/>
+                        <outlet property="segmentcontroler" destination="M5f-fy-JGY" id="4Hf-w9-hRU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hL5-C4-Yax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1659.5" y="-320.5"/>
+            <point key="canvasLocation" x="1659.5" y="-296.5"/>
+        </scene>
+        <!--Route-->
+        <scene sceneID="sLB-yS-TIn">
+            <objects>
+                <viewController id="s1t-Fe-upa" customClass="Route" customModule="AdventureWorldApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gHy-kF-AxW"/>
+                        <viewControllerLayoutGuide type="bottom" id="wqF-hX-zPl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fax-cB-BGL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9z-AZ-BAb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="s1t-Fe-upa" id="irl-Wf-rfW"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="sucheNachAttraktionen" destination="n9z-AZ-BAb" id="YRW-Vv-xJx"/>
+                        <segue destination="914-Gq-HV8" kind="show" id="sen-Lj-1jR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6V-1I-P1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2168.5" y="-320.5"/>
         </scene>
         <!--Chat-->
         <scene sceneID="qIP-8X-wUw">
@@ -457,5 +495,8 @@ Bitte h</string>
         <image name="second" width="30" height="30"/>
         <image name="wartezeiten.png" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sen-Lj-1jR"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

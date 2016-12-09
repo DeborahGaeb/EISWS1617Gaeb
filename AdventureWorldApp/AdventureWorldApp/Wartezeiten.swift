@@ -19,29 +19,8 @@ import UIKit
 class Wartezeiten: UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var wartezeiteTableView: UITableView!
     
-    var attraktionen = [
-        "Bei Elfen und Fellen",
-        "Papageinflug",
-        "Wurm Express",
-        "Hüpfende Frösche",
-        "Magische Flugräder",
-        "Apollo 21",
-        "Raketenflug Delux",
-        "Main Street",
-        "Das verrückte Hotel Tatütat",
-        "Mäuse jage",
-        "Variété de Marie",
-        "Restaurant am Brunnen",
-        "Historiisches Pferdekaruell",
-        "Spooky",
-        "Geisterflug",
-        "Spooky Castle",
-        "Dämonens Ride",
-        "Xiuhcoatl",
-        "Indianer",
-        "Arizonas Express",
-        "Restaurant a la Plaza"
-    ]
+    var attraktionen:[(nummer: Int, name: String, ausgewaehlt: Bool)] = [(nummer: 1, name: "Information", ausgewaehlt: false), (nummer: 2, name: "Das verrückte Hotel Tatütat", ausgewaehlt: false), (nummer: 3, name:"Restaurant am Brunnen", ausgewaehlt: false), (nummer: 4, name: "Mäuse jagt", ausgewaehlt: false), (nummer: 5, name:"Variété de Marie", ausgewaehlt: false), (nummer: 6, name: "Historisches Pferdekaruelle", ausgewaehlt: false),(nummer: 7, name:"Geisterflug", ausgewaehlt: false),(nummer: 8, name:"Spooky Castle", ausgewaehlt: false), (nummer: 9, name:"", ausgewaehlt: false),(nummer: 10, name:"Xiuhcoatl", ausgewaehlt: false),(nummer: 11, name:"Arizonas Express", ausgewaehlt: false),(nummer: 12, name:"Restaurant a la Plaza", ausgewaehlt: false), (nummer: 13, name:"Indianer", ausgewaehlt: false), (nummer: 14 , name:"magische Flugräder", ausgewaehlt: false),(nummer: 15, name:"Hüpfende Frösche", ausgewaehlt:false),(nummer: 16, name:"Papageinflug", ausgewaehlt: false),(nummer: 17, name:"Wurm Express", ausgewaehlt: false), (nummer: 18, name:"Raketen Flug Delux", ausgewaehlt: false), (nummer: 19 , name:"Imbiss in Spooky", ausgewaehlt: false), (nummer: 20, name:"Imbiss in Bei Elfen und Feen", ausgewaehlt: false)]
+    
     
     func sortieren (){
         for _ in 1...attraktionen.count {
@@ -53,7 +32,8 @@ class Wartezeiten: UIViewController, UITableViewDataSource, UITableViewDelegate{
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 3
     }
-    //Anzahl
+    
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return attraktionen.count
     }
@@ -62,7 +42,7 @@ class Wartezeiten: UIViewController, UITableViewDataSource, UITableViewDelegate{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let zelle = UITableViewCell()
         let attraktion = attraktionen[indexPath.row]
-        zelle.textLabel?.text = attraktion
+        zelle.textLabel?.text = attraktion.name
         return zelle
     }
     

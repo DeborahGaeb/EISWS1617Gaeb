@@ -2,8 +2,8 @@
 //  AdventureWorldAppUITests.swift
 //  AdventureWorldAppUITests
 //
-//  Created by Deborah Gäb on 01.11.16.
-//  Copyright © 2016 Deborah Gäb. All rights reserved.
+//  Created by Deborah Gäb on 14.01.17.
+//  Copyright © 2017 Deborah Gäb. All rights reserved.
 //
 
 import XCTest

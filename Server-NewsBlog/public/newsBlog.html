@@ -1,0 +1,55 @@
+<!DOCTYPE HTML5>
+<html lange ="de">
+    <head>
+        <title> News Blog des AdventureWorld </title>
+        <meta http-equiv ="content-type" content = "text/html charset=UTF-8">
+        <title> News Blog </title>
+        <style>
+          .txtarea {
+              display:  block;
+              width: 450px;
+              height: 200px;
+          }
+           .msg_input {
+              width: 350px;
+          }
+          .send_input {
+            width: 100px;
+          }
+          
+        </style>
+    </head>
+    <body>
+        <ul>
+          <li>Home <a href="http://localhost:8000/"></a></li>
+          <li>News Blog <a href="#"></a></li>
+          <li> Wartzeiten ermitteln <a href="http://localhost:8000(/wartezeitenErstellen"></a></li>
+        </ul>
+        <h1> News Block des Adventure World</h1>
+        
+        <textarea class="js-txtarea txtarea"></textarea>
+        <input type="text" value="" class="js-msg_input msg_input"/>
+        <input type="button" value="senden" class="js-send_input send_input"/>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var send_input = document.querySelector('.js-send_input');
+      var msg_input  = document.querySelector('.js-msg_input');
+      var txtarea    = document.querySelector('.js-txtarea');
+      
+      var socket = io.connect('http://localhost:8000/newsBlog');
+      
+      socket.on('message', function (msg) {
+        txtarea.value = txtarea.value + '\n' + msg;
+      });
+      
+      send_input.addEventListener('click', function (e){
+        var msg = msg_input.value;
+        msg_input.value = "";
+        
+        socket.send(msg);
+      });
+      
+    </script>
+  </body>
+</html>

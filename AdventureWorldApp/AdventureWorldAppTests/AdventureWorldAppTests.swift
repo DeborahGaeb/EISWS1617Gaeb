@@ -2,8 +2,8 @@
 //  AdventureWorldAppTests.swift
 //  AdventureWorldAppTests
 //
-//  Created by Deborah Gäb on 01.11.16.
-//  Copyright © 2016 Deborah Gäb. All rights reserved.
+//  Created by Deborah Gäb on 14.01.17.
+//  Copyright © 2017 Deborah Gäb. All rights reserved.
 //
 
 import XCTest
@@ -28,7 +28,7 @@ class AdventureWorldAppTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

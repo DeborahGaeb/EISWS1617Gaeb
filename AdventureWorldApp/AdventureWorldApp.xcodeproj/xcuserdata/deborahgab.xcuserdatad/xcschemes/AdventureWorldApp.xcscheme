@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "401696101DC8A0C400E1DF38"
+               BlueprintIdentifier = "40E9FD841E2A6E3D00D364D0"
                BuildableName = "AdventureWorldApp.app"
                BlueprintName = "AdventureWorldApp"
                ReferencedContainer = "container:AdventureWorldApp.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "401696261DC8A0C400E1DF38"
+               BlueprintIdentifier = "40E9FD9A1E2A6E3D00D364D0"
                BuildableName = "AdventureWorldAppTests.xctest"
                BlueprintName = "AdventureWorldAppTests"
                ReferencedContainer = "container:AdventureWorldApp.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "401696311DC8A0C400E1DF38"
+               BlueprintIdentifier = "40E9FDA51E2A6E3D00D364D0"
                BuildableName = "AdventureWorldAppUITests.xctest"
                BlueprintName = "AdventureWorldAppUITests"
                ReferencedContainer = "container:AdventureWorldApp.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "401696101DC8A0C400E1DF38"
+            BlueprintIdentifier = "40E9FD841E2A6E3D00D364D0"
             BuildableName = "AdventureWorldApp.app"
             BlueprintName = "AdventureWorldApp"
             ReferencedContainer = "container:AdventureWorldApp.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "401696101DC8A0C400E1DF38"
+            BlueprintIdentifier = "40E9FD841E2A6E3D00D364D0"
             BuildableName = "AdventureWorldApp.app"
             BlueprintName = "AdventureWorldApp"
             ReferencedContainer = "container:AdventureWorldApp.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "401696101DC8A0C400E1DF38"
+            BlueprintIdentifier = "40E9FD841E2A6E3D00D364D0"
             BuildableName = "AdventureWorldApp.app"
             BlueprintName = "AdventureWorldApp"
             ReferencedContainer = "container:AdventureWorldApp.xcodeproj">

@@ -1,0 +1,6 @@
+framework module Pods_AdventureWorldApp {
+  umbrella header "Pods-AdventureWorldApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

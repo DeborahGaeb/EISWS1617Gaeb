@@ -7,91 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4000997F1DD08C9D00D9E87D /* newsBlog.html in Resources */ = {isa = PBXBuildFile; fileRef = 4000997E1DD08C9D00D9E87D /* newsBlog.html */; };
-		401696151DC8A0C400E1DF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401696141DC8A0C400E1DF38 /* AppDelegate.swift */; };
-		401696171DC8A0C400E1DF38 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401696161DC8A0C400E1DF38 /* FirstViewController.swift */; };
-		4016961E1DC8A0C400E1DF38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4016961D1DC8A0C400E1DF38 /* Assets.xcassets */; };
-		401696211DC8A0C400E1DF38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4016961F1DC8A0C400E1DF38 /* LaunchScreen.storyboard */; };
-		4016962C1DC8A0C400E1DF38 /* AdventureWorldAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016962B1DC8A0C400E1DF38 /* AdventureWorldAppTests.swift */; };
-		401696371DC8A0C400E1DF38 /* AdventureWorldAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401696361DC8A0C400E1DF38 /* AdventureWorldAppUITests.swift */; };
-		401696451DC8A20400E1DF38 /* Parkplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401696441DC8A20400E1DF38 /* Parkplan.swift */; };
-		401696491DC8A4BD00E1DF38 /* Notfallfunktion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401696481DC8A4BD00E1DF38 /* Notfallfunktion.swift */; };
-		4016964B1DC8A6FC00E1DF38 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016964A1DC8A6FC00E1DF38 /* Chat.swift */; };
-		4023BF811DF98B5A00107695 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023BF801DF98B5A00107695 /* Route.swift */; };
-		4056A92C1DC9D1FF00754C50 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4056A92B1DC9D1FF00754C50 /* WebKit.framework */; };
-		4056A9301DC9DBFE00754C50 /* Wartezeiten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056A92F1DC9DBFE00754C50 /* Wartezeiten.swift */; };
-		407609441DF2FAB9007A7A1D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 407609431DF2FAB9007A7A1D /* libsqlite3.tbd */; };
-		4083374B1DD0913B004A98F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4083374A1DD0913B004A98F5 /* Main.storyboard */; };
-		408654841DCCC48D0053F496 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408654831DCCC48D0053F496 /* MapKit.framework */; };
-		40DF54CD1DCC962300C72D87 /* NotfallMelden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DF54CC1DCC962300C72D87 /* NotfallMelden.swift */; };
-		40DF54CF1DCC971000C72D87 /* MeinKindIstWeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DF54CE1DCC971000C72D87 /* MeinKindIstWeg.swift */; };
-		40F1B91E1DD06F400050A7C3 /* chat.html in Resources */ = {isa = PBXBuildFile; fileRef = 40F1B91D1DD06F400050A7C3 /* chat.html */; };
+		13B2794E140C98CBB94FC94F /* Pods_AdventureWorldApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447FC81D32A21AAFA5F510F2 /* Pods_AdventureWorldApp.framework */; };
+		40E52C261E2A7A6D000CFABE /* Startseite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E52C251E2A7A6D000CFABE /* Startseite.swift */; };
+		40E9FD891E2A6E3D00D364D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9FD881E2A6E3D00D364D0 /* AppDelegate.swift */; };
+		40E9FD901E2A6E3D00D364D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E9FD8E1E2A6E3D00D364D0 /* Main.storyboard */; };
+		40E9FD921E2A6E3D00D364D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E9FD911E2A6E3D00D364D0 /* Assets.xcassets */; };
+		40E9FD951E2A6E3D00D364D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E9FD931E2A6E3D00D364D0 /* LaunchScreen.storyboard */; };
+		40E9FDA01E2A6E3D00D364D0 /* AdventureWorldAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9FD9F1E2A6E3D00D364D0 /* AdventureWorldAppTests.swift */; };
+		40E9FDAB1E2A6E3D00D364D0 /* AdventureWorldAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9FDAA1E2A6E3D00D364D0 /* AdventureWorldAppUITests.swift */; };
+		40E9FDBA1E2A6E4400D364D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E9FDB91E2A6E4400D364D0 /* MapKit.framework */; };
+		40E9FDBE1E2A6F3E00D364D0 /* Wartzeiten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9FDBD1E2A6F3E00D364D0 /* Wartzeiten.swift */; };
+		40E9FDC01E2A6FA000D364D0 /* Parlplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9FDBF1E2A6FA000D364D0 /* Parlplan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		401696281DC8A0C400E1DF38 /* PBXContainerItemProxy */ = {
+		40E9FD9C1E2A6E3D00D364D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 401696091DC8A0C400E1DF38 /* Project object */;
+			containerPortal = 40E9FD7D1E2A6E3D00D364D0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 401696101DC8A0C400E1DF38;
+			remoteGlobalIDString = 40E9FD841E2A6E3D00D364D0;
 			remoteInfo = AdventureWorldApp;
 		};
-		401696331DC8A0C400E1DF38 /* PBXContainerItemProxy */ = {
+		40E9FDA71E2A6E3D00D364D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 401696091DC8A0C400E1DF38 /* Project object */;
+			containerPortal = 40E9FD7D1E2A6E3D00D364D0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 401696101DC8A0C400E1DF38;
+			remoteGlobalIDString = 40E9FD841E2A6E3D00D364D0;
 			remoteInfo = AdventureWorldApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4000997E1DD08C9D00D9E87D /* newsBlog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = newsBlog.html; sourceTree = "<group>"; };
-		401696111DC8A0C400E1DF38 /* AdventureWorldApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventureWorldApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		401696141DC8A0C400E1DF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		401696161DC8A0C400E1DF38 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4016961D1DC8A0C400E1DF38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		401696201DC8A0C400E1DF38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		401696221DC8A0C400E1DF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		401696271DC8A0C400E1DF38 /* AdventureWorldAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventureWorldAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4016962B1DC8A0C400E1DF38 /* AdventureWorldAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureWorldAppTests.swift; sourceTree = "<group>"; };
-		4016962D1DC8A0C400E1DF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		401696321DC8A0C400E1DF38 /* AdventureWorldAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventureWorldAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		401696361DC8A0C400E1DF38 /* AdventureWorldAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureWorldAppUITests.swift; sourceTree = "<group>"; };
-		401696381DC8A0C400E1DF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		401696441DC8A20400E1DF38 /* Parkplan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parkplan.swift; sourceTree = "<group>"; };
-		401696481DC8A4BD00E1DF38 /* Notfallfunktion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notfallfunktion.swift; sourceTree = "<group>"; };
-		4016964A1DC8A6FC00E1DF38 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Chat.swift; sourceTree = "<group>"; };
-		4023BF801DF98B5A00107695 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		4056A92B1DC9D1FF00754C50 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		4056A92F1DC9DBFE00754C50 /* Wartezeiten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wartezeiten.swift; sourceTree = "<group>"; };
-		407609431DF2FAB9007A7A1D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		4083374A1DD0913B004A98F5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		408654831DCCC48D0053F496 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		40DF54CC1DCC962300C72D87 /* NotfallMelden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotfallMelden.swift; sourceTree = "<group>"; };
-		40DF54CE1DCC971000C72D87 /* MeinKindIstWeg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeinKindIstWeg.swift; sourceTree = "<group>"; };
-		40F1B91D1DD06F400050A7C3 /* chat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = chat.html; sourceTree = "<group>"; };
+		40E52C251E2A7A6D000CFABE /* Startseite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Startseite.swift; sourceTree = "<group>"; };
+		40E9FD851E2A6E3D00D364D0 /* AdventureWorldApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventureWorldApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E9FD881E2A6E3D00D364D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40E9FD8F1E2A6E3D00D364D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40E9FD911E2A6E3D00D364D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40E9FD941E2A6E3D00D364D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40E9FD961E2A6E3D00D364D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E9FD9B1E2A6E3D00D364D0 /* AdventureWorldAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventureWorldAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E9FD9F1E2A6E3D00D364D0 /* AdventureWorldAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureWorldAppTests.swift; sourceTree = "<group>"; };
+		40E9FDA11E2A6E3D00D364D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E9FDA61E2A6E3D00D364D0 /* AdventureWorldAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventureWorldAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E9FDAA1E2A6E3D00D364D0 /* AdventureWorldAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureWorldAppUITests.swift; sourceTree = "<group>"; };
+		40E9FDAC1E2A6E3D00D364D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E9FDB91E2A6E4400D364D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		40E9FDBD1E2A6F3E00D364D0 /* Wartzeiten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wartzeiten.swift; sourceTree = "<group>"; };
+		40E9FDBF1E2A6FA000D364D0 /* Parlplan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parlplan.swift; sourceTree = "<group>"; };
+		447FC81D32A21AAFA5F510F2 /* Pods_AdventureWorldApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdventureWorldApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4C6DD4A779C37612C511E8 /* Pods-AdventureWorldApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventureWorldApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdventureWorldApp/Pods-AdventureWorldApp.release.xcconfig"; sourceTree = "<group>"; };
+		9F8F32D6A785B70C47EB344C /* Pods-AdventureWorldApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdventureWorldApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdventureWorldApp/Pods-AdventureWorldApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4016960E1DC8A0C400E1DF38 /* Frameworks */ = {
+		40E9FD821E2A6E3D00D364D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				407609441DF2FAB9007A7A1D /* libsqlite3.tbd in Frameworks */,
-				408654841DCCC48D0053F496 /* MapKit.framework in Frameworks */,
-				4056A92C1DC9D1FF00754C50 /* WebKit.framework in Frameworks */,
+				40E9FDBA1E2A6E4400D364D0 /* MapKit.framework in Frameworks */,
+				13B2794E140C98CBB94FC94F /* Pods_AdventureWorldApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		401696241DC8A0C400E1DF38 /* Frameworks */ = {
+		40E9FD981E2A6E3D00D364D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4016962F1DC8A0C400E1DF38 /* Frameworks */ = {
+		40E9FDA31E2A6E3D00D364D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -101,80 +86,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		401696081DC8A0C400E1DF38 = {
+		40E9FD7C1E2A6E3D00D364D0 = {
 			isa = PBXGroup;
 			children = (
-				407609431DF2FAB9007A7A1D /* libsqlite3.tbd */,
-				408654831DCCC48D0053F496 /* MapKit.framework */,
-				4056A92B1DC9D1FF00754C50 /* WebKit.framework */,
-				401696131DC8A0C400E1DF38 /* AdventureWorldApp */,
-				4016962A1DC8A0C400E1DF38 /* AdventureWorldAppTests */,
-				401696351DC8A0C400E1DF38 /* AdventureWorldAppUITests */,
-				401696121DC8A0C400E1DF38 /* Products */,
+				40E9FD871E2A6E3D00D364D0 /* AdventureWorldApp */,
+				40E9FD9E1E2A6E3D00D364D0 /* AdventureWorldAppTests */,
+				40E9FDA91E2A6E3D00D364D0 /* AdventureWorldAppUITests */,
+				40E9FD861E2A6E3D00D364D0 /* Products */,
+				40E9FDB81E2A6E4400D364D0 /* Frameworks */,
+				B65C8CFD576F89168D6E3FFA /* Pods */,
 			);
 			sourceTree = "<group>";
-			usesTabs = 0;
 		};
-		401696121DC8A0C400E1DF38 /* Products */ = {
+		40E9FD861E2A6E3D00D364D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				401696111DC8A0C400E1DF38 /* AdventureWorldApp.app */,
-				401696271DC8A0C400E1DF38 /* AdventureWorldAppTests.xctest */,
-				401696321DC8A0C400E1DF38 /* AdventureWorldAppUITests.xctest */,
+				40E9FD851E2A6E3D00D364D0 /* AdventureWorldApp.app */,
+				40E9FD9B1E2A6E3D00D364D0 /* AdventureWorldAppTests.xctest */,
+				40E9FDA61E2A6E3D00D364D0 /* AdventureWorldAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		401696131DC8A0C400E1DF38 /* AdventureWorldApp */ = {
+		40E9FD871E2A6E3D00D364D0 /* AdventureWorldApp */ = {
 			isa = PBXGroup;
 			children = (
-				401696141DC8A0C400E1DF38 /* AppDelegate.swift */,
-				401696161DC8A0C400E1DF38 /* FirstViewController.swift */,
-				4000997E1DD08C9D00D9E87D /* newsBlog.html */,
-				4056A92F1DC9DBFE00754C50 /* Wartezeiten.swift */,
-				401696441DC8A20400E1DF38 /* Parkplan.swift */,
-				40F1B91D1DD06F400050A7C3 /* chat.html */,
-				4016964A1DC8A6FC00E1DF38 /* Chat.swift */,
-				401696481DC8A4BD00E1DF38 /* Notfallfunktion.swift */,
-				40DF54CE1DCC971000C72D87 /* MeinKindIstWeg.swift */,
-				40DF54CC1DCC962300C72D87 /* NotfallMelden.swift */,
-				4083374A1DD0913B004A98F5 /* Main.storyboard */,
-				4023BF801DF98B5A00107695 /* Route.swift */,
-				4016961D1DC8A0C400E1DF38 /* Assets.xcassets */,
-				4016961F1DC8A0C400E1DF38 /* LaunchScreen.storyboard */,
-				401696221DC8A0C400E1DF38 /* Info.plist */,
+				40E9FD881E2A6E3D00D364D0 /* AppDelegate.swift */,
+				40E52C251E2A7A6D000CFABE /* Startseite.swift */,
+				40E9FDBD1E2A6F3E00D364D0 /* Wartzeiten.swift */,
+				40E9FD8E1E2A6E3D00D364D0 /* Main.storyboard */,
+				40E9FDBF1E2A6FA000D364D0 /* Parlplan.swift */,
+				40E9FD911E2A6E3D00D364D0 /* Assets.xcassets */,
+				40E9FD931E2A6E3D00D364D0 /* LaunchScreen.storyboard */,
+				40E9FD961E2A6E3D00D364D0 /* Info.plist */,
 			);
 			path = AdventureWorldApp;
 			sourceTree = "<group>";
 		};
-		4016962A1DC8A0C400E1DF38 /* AdventureWorldAppTests */ = {
+		40E9FD9E1E2A6E3D00D364D0 /* AdventureWorldAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				4016962B1DC8A0C400E1DF38 /* AdventureWorldAppTests.swift */,
-				4016962D1DC8A0C400E1DF38 /* Info.plist */,
+				40E9FD9F1E2A6E3D00D364D0 /* AdventureWorldAppTests.swift */,
+				40E9FDA11E2A6E3D00D364D0 /* Info.plist */,
 			);
 			path = AdventureWorldAppTests;
 			sourceTree = "<group>";
 		};
-		401696351DC8A0C400E1DF38 /* AdventureWorldAppUITests */ = {
+		40E9FDA91E2A6E3D00D364D0 /* AdventureWorldAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				401696361DC8A0C400E1DF38 /* AdventureWorldAppUITests.swift */,
-				401696381DC8A0C400E1DF38 /* Info.plist */,
+				40E9FDAA1E2A6E3D00D364D0 /* AdventureWorldAppUITests.swift */,
+				40E9FDAC1E2A6E3D00D364D0 /* Info.plist */,
 			);
 			path = AdventureWorldAppUITests;
+			sourceTree = "<group>";
+		};
+		40E9FDB81E2A6E4400D364D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40E9FDB91E2A6E4400D364D0 /* MapKit.framework */,
+				447FC81D32A21AAFA5F510F2 /* Pods_AdventureWorldApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B65C8CFD576F89168D6E3FFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F8F32D6A785B70C47EB344C /* Pods-AdventureWorldApp.debug.xcconfig */,
+				7D4C6DD4A779C37612C511E8 /* Pods-AdventureWorldApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		401696101DC8A0C400E1DF38 /* AdventureWorldApp */ = {
+		40E9FD841E2A6E3D00D364D0 /* AdventureWorldApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4016963B1DC8A0C400E1DF38 /* Build configuration list for PBXNativeTarget "AdventureWorldApp" */;
+			buildConfigurationList = 40E9FDAF1E2A6E3D00D364D0 /* Build configuration list for PBXNativeTarget "AdventureWorldApp" */;
 			buildPhases = (
-				4016960D1DC8A0C400E1DF38 /* Sources */,
-				4016960E1DC8A0C400E1DF38 /* Frameworks */,
-				4016960F1DC8A0C400E1DF38 /* Resources */,
+				060185F3E56CE87EA2BCC283 /* [CP] Check Pods Manifest.lock */,
+				40E9FD811E2A6E3D00D364D0 /* Sources */,
+				40E9FD821E2A6E3D00D364D0 /* Frameworks */,
+				40E9FD831E2A6E3D00D364D0 /* Resources */,
+				7C802E45A221C92CF60642B9 /* [CP] Embed Pods Frameworks */,
+				DCF59E1F076A9DFF883D7A09 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,77 +179,80 @@
 			);
 			name = AdventureWorldApp;
 			productName = AdventureWorldApp;
-			productReference = 401696111DC8A0C400E1DF38 /* AdventureWorldApp.app */;
+			productReference = 40E9FD851E2A6E3D00D364D0 /* AdventureWorldApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		401696261DC8A0C400E1DF38 /* AdventureWorldAppTests */ = {
+		40E9FD9A1E2A6E3D00D364D0 /* AdventureWorldAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4016963E1DC8A0C400E1DF38 /* Build configuration list for PBXNativeTarget "AdventureWorldAppTests" */;
+			buildConfigurationList = 40E9FDB21E2A6E3D00D364D0 /* Build configuration list for PBXNativeTarget "AdventureWorldAppTests" */;
 			buildPhases = (
-				401696231DC8A0C400E1DF38 /* Sources */,
-				401696241DC8A0C400E1DF38 /* Frameworks */,
-				401696251DC8A0C400E1DF38 /* Resources */,
+				40E9FD971E2A6E3D00D364D0 /* Sources */,
+				40E9FD981E2A6E3D00D364D0 /* Frameworks */,
+				40E9FD991E2A6E3D00D364D0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				401696291DC8A0C400E1DF38 /* PBXTargetDependency */,
+				40E9FD9D1E2A6E3D00D364D0 /* PBXTargetDependency */,
 			);
 			name = AdventureWorldAppTests;
 			productName = AdventureWorldAppTests;
-			productReference = 401696271DC8A0C400E1DF38 /* AdventureWorldAppTests.xctest */;
+			productReference = 40E9FD9B1E2A6E3D00D364D0 /* AdventureWorldAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		401696311DC8A0C400E1DF38 /* AdventureWorldAppUITests */ = {
+		40E9FDA51E2A6E3D00D364D0 /* AdventureWorldAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 401696411DC8A0C400E1DF38 /* Build configuration list for PBXNativeTarget "AdventureWorldAppUITests" */;
+			buildConfigurationList = 40E9FDB51E2A6E3D00D364D0 /* Build configuration list for PBXNativeTarget "AdventureWorldAppUITests" */;
 			buildPhases = (
-				4016962E1DC8A0C400E1DF38 /* Sources */,
-				4016962F1DC8A0C400E1DF38 /* Frameworks */,
-				401696301DC8A0C400E1DF38 /* Resources */,
+				40E9FDA21E2A6E3D00D364D0 /* Sources */,
+				40E9FDA31E2A6E3D00D364D0 /* Frameworks */,
+				40E9FDA41E2A6E3D00D364D0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				401696341DC8A0C400E1DF38 /* PBXTargetDependency */,
+				40E9FDA81E2A6E3D00D364D0 /* PBXTargetDependency */,
 			);
 			name = AdventureWorldAppUITests;
 			productName = AdventureWorldAppUITests;
-			productReference = 401696321DC8A0C400E1DF38 /* AdventureWorldAppUITests.xctest */;
+			productReference = 40E9FDA61E2A6E3D00D364D0 /* AdventureWorldAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		401696091DC8A0C400E1DF38 /* Project object */ = {
+		40E9FD7D1E2A6E3D00D364D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Deborah Gäb";
 				TargetAttributes = {
-					401696101DC8A0C400E1DF38 = {
-						CreatedOnToolsVersion = 7.3;
+					40E9FD841E2A6E3D00D364D0 = {
+						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L529BG38CT;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
 						};
 					};
-					401696261DC8A0C400E1DF38 = {
-						CreatedOnToolsVersion = 7.3;
+					40E9FD9A1E2A6E3D00D364D0 = {
+						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L529BG38CT;
-						TestTargetID = 401696101DC8A0C400E1DF38;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 40E9FD841E2A6E3D00D364D0;
 					};
-					401696311DC8A0C400E1DF38 = {
-						CreatedOnToolsVersion = 7.3;
+					40E9FDA51E2A6E3D00D364D0 = {
+						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L529BG38CT;
-						TestTargetID = 401696101DC8A0C400E1DF38;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 40E9FD841E2A6E3D00D364D0;
 					};
 				};
 			};
-			buildConfigurationList = 4016960C1DC8A0C400E1DF38 /* Build configuration list for PBXProject "AdventureWorldApp" */;
+			buildConfigurationList = 40E9FD801E2A6E3D00D364D0 /* Build configuration list for PBXProject "AdventureWorldApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -260,39 +260,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 401696081DC8A0C400E1DF38;
-			productRefGroup = 401696121DC8A0C400E1DF38 /* Products */;
+			mainGroup = 40E9FD7C1E2A6E3D00D364D0;
+			productRefGroup = 40E9FD861E2A6E3D00D364D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				401696101DC8A0C400E1DF38 /* AdventureWorldApp */,
-				401696261DC8A0C400E1DF38 /* AdventureWorldAppTests */,
-				401696311DC8A0C400E1DF38 /* AdventureWorldAppUITests */,
+				40E9FD841E2A6E3D00D364D0 /* AdventureWorldApp */,
+				40E9FD9A1E2A6E3D00D364D0 /* AdventureWorldAppTests */,
+				40E9FDA51E2A6E3D00D364D0 /* AdventureWorldAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4016960F1DC8A0C400E1DF38 /* Resources */ = {
+		40E9FD831E2A6E3D00D364D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F1B91E1DD06F400050A7C3 /* chat.html in Resources */,
-				4000997F1DD08C9D00D9E87D /* newsBlog.html in Resources */,
-				4083374B1DD0913B004A98F5 /* Main.storyboard in Resources */,
-				401696211DC8A0C400E1DF38 /* LaunchScreen.storyboard in Resources */,
-				4016961E1DC8A0C400E1DF38 /* Assets.xcassets in Resources */,
+				40E9FD951E2A6E3D00D364D0 /* LaunchScreen.storyboard in Resources */,
+				40E9FD921E2A6E3D00D364D0 /* Assets.xcassets in Resources */,
+				40E9FD901E2A6E3D00D364D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		401696251DC8A0C400E1DF38 /* Resources */ = {
+		40E9FD991E2A6E3D00D364D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		401696301DC8A0C400E1DF38 /* Resources */ = {
+		40E9FDA41E2A6E3D00D364D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,59 +299,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		060185F3E56CE87EA2BCC283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C802E45A221C92CF60642B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdventureWorldApp/Pods-AdventureWorldApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF59E1F076A9DFF883D7A09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdventureWorldApp/Pods-AdventureWorldApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		4016960D1DC8A0C400E1DF38 /* Sources */ = {
+		40E9FD811E2A6E3D00D364D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4023BF811DF98B5A00107695 /* Route.swift in Sources */,
-				401696491DC8A4BD00E1DF38 /* Notfallfunktion.swift in Sources */,
-				40DF54CF1DCC971000C72D87 /* MeinKindIstWeg.swift in Sources */,
-				4016964B1DC8A6FC00E1DF38 /* Chat.swift in Sources */,
-				401696151DC8A0C400E1DF38 /* AppDelegate.swift in Sources */,
-				401696451DC8A20400E1DF38 /* Parkplan.swift in Sources */,
-				4056A9301DC9DBFE00754C50 /* Wartezeiten.swift in Sources */,
-				401696171DC8A0C400E1DF38 /* FirstViewController.swift in Sources */,
-				40DF54CD1DCC962300C72D87 /* NotfallMelden.swift in Sources */,
+				40E9FDBE1E2A6F3E00D364D0 /* Wartzeiten.swift in Sources */,
+				40E9FD891E2A6E3D00D364D0 /* AppDelegate.swift in Sources */,
+				40E9FDC01E2A6FA000D364D0 /* Parlplan.swift in Sources */,
+				40E52C261E2A7A6D000CFABE /* Startseite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		401696231DC8A0C400E1DF38 /* Sources */ = {
+		40E9FD971E2A6E3D00D364D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4016962C1DC8A0C400E1DF38 /* AdventureWorldAppTests.swift in Sources */,
+				40E9FDA01E2A6E3D00D364D0 /* AdventureWorldAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4016962E1DC8A0C400E1DF38 /* Sources */ = {
+		40E9FDA21E2A6E3D00D364D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				401696371DC8A0C400E1DF38 /* AdventureWorldAppUITests.swift in Sources */,
+				40E9FDAB1E2A6E3D00D364D0 /* AdventureWorldAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		401696291DC8A0C400E1DF38 /* PBXTargetDependency */ = {
+		40E9FD9D1E2A6E3D00D364D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 401696101DC8A0C400E1DF38 /* AdventureWorldApp */;
-			targetProxy = 401696281DC8A0C400E1DF38 /* PBXContainerItemProxy */;
+			target = 40E9FD841E2A6E3D00D364D0 /* AdventureWorldApp */;
+			targetProxy = 40E9FD9C1E2A6E3D00D364D0 /* PBXContainerItemProxy */;
 		};
-		401696341DC8A0C400E1DF38 /* PBXTargetDependency */ = {
+		40E9FDA81E2A6E3D00D364D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 401696101DC8A0C400E1DF38 /* AdventureWorldApp */;
-			targetProxy = 401696331DC8A0C400E1DF38 /* PBXContainerItemProxy */;
+			target = 40E9FD841E2A6E3D00D364D0 /* AdventureWorldApp */;
+			targetProxy = 40E9FDA71E2A6E3D00D364D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4016961F1DC8A0C400E1DF38 /* LaunchScreen.storyboard */ = {
+		40E9FD8E1E2A6E3D00D364D0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				401696201DC8A0C400E1DF38 /* Base */,
+				40E9FD8F1E2A6E3D00D364D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40E9FD931E2A6E3D00D364D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40E9FD941E2A6E3D00D364D0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -361,7 +410,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		401696391DC8A0C400E1DF38 /* Debug */ = {
+		40E9FDAD1E2A6E3D00D364D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,10 +422,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -398,15 +450,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		4016963A1DC8A0C400E1DF38 /* Release */ = {
+		40E9FDAE1E2A6E3D00D364D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -418,10 +471,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -437,81 +493,96 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		4016963C1DC8A0C400E1DF38 /* Debug */ = {
+		40E9FDB01E2A6E3D00D364D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F8F32D6A785B70C47EB344C /* Pods-AdventureWorldApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = L529BG38CT;
 				INFOPLIST_FILE = AdventureWorldApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "AOOLoesung-EISWS1617Gaeb.AdventureWorldApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "APPLoesung-EISWS1617Gaeb.AdventureWorldApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		4016963D1DC8A0C400E1DF38 /* Release */ = {
+		40E9FDB11E2A6E3D00D364D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4C6DD4A779C37612C511E8 /* Pods-AdventureWorldApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = L529BG38CT;
 				INFOPLIST_FILE = AdventureWorldApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "AOOLoesung-EISWS1617Gaeb.AdventureWorldApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "APPLoesung-EISWS1617Gaeb.AdventureWorldApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		4016963F1DC8A0C400E1DF38 /* Debug */ = {
+		40E9FDB31E2A6E3D00D364D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L529BG38CT;
 				INFOPLIST_FILE = AdventureWorldAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "AOOLoesung-EISWS1617Gaeb.AdventureWorldAppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "APPLoesung-EISWS1617Gaeb.AdventureWorldAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdventureWorldApp.app/AdventureWorldApp";
 			};
 			name = Debug;
 		};
-		401696401DC8A0C400E1DF38 /* Release */ = {
+		40E9FDB41E2A6E3D00D364D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L529BG38CT;
 				INFOPLIST_FILE = AdventureWorldAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "AOOLoesung-EISWS1617Gaeb.AdventureWorldAppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "APPLoesung-EISWS1617Gaeb.AdventureWorldAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdventureWorldApp.app/AdventureWorldApp";
 			};
 			name = Release;
 		};
-		401696421DC8A0C400E1DF38 /* Debug */ = {
+		40E9FDB61E2A6E3D00D364D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L529BG38CT;
 				INFOPLIST_FILE = AdventureWorldAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "AOOLoesung-EISWS1617Gaeb.AdventureWorldAppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "APPLoesung-EISWS1617Gaeb.AdventureWorldAppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = AdventureWorldApp;
 			};
 			name = Debug;
 		};
-		401696431DC8A0C400E1DF38 /* Release */ = {
+		40E9FDB71E2A6E3D00D364D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L529BG38CT;
 				INFOPLIST_FILE = AdventureWorldAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "AOOLoesung-EISWS1617Gaeb.AdventureWorldAppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "APPLoesung-EISWS1617Gaeb.AdventureWorldAppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = AdventureWorldApp;
 			};
 			name = Release;
@@ -519,43 +590,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4016960C1DC8A0C400E1DF38 /* Build configuration list for PBXProject "AdventureWorldApp" */ = {
+		40E9FD801E2A6E3D00D364D0 /* Build configuration list for PBXProject "AdventureWorldApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				401696391DC8A0C400E1DF38 /* Debug */,
-				4016963A1DC8A0C400E1DF38 /* Release */,
+				40E9FDAD1E2A6E3D00D364D0 /* Debug */,
+				40E9FDAE1E2A6E3D00D364D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4016963B1DC8A0C400E1DF38 /* Build configuration list for PBXNativeTarget "AdventureWorldApp" */ = {
+		40E9FDAF1E2A6E3D00D364D0 /* Build configuration list for PBXNativeTarget "AdventureWorldApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4016963C1DC8A0C400E1DF38 /* Debug */,
-				4016963D1DC8A0C400E1DF38 /* Release */,
+				40E9FDB01E2A6E3D00D364D0 /* Debug */,
+				40E9FDB11E2A6E3D00D364D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4016963E1DC8A0C400E1DF38 /* Build configuration list for PBXNativeTarget "AdventureWorldAppTests" */ = {
+		40E9FDB21E2A6E3D00D364D0 /* Build configuration list for PBXNativeTarget "AdventureWorldAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4016963F1DC8A0C400E1DF38 /* Debug */,
-				401696401DC8A0C400E1DF38 /* Release */,
+				40E9FDB31E2A6E3D00D364D0 /* Debug */,
+				40E9FDB41E2A6E3D00D364D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		401696411DC8A0C400E1DF38 /* Build configuration list for PBXNativeTarget "AdventureWorldAppUITests" */ = {
+		40E9FDB51E2A6E3D00D364D0 /* Build configuration list for PBXNativeTarget "AdventureWorldAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				401696421DC8A0C400E1DF38 /* Debug */,
-				401696431DC8A0C400E1DF38 /* Release */,
+				40E9FDB61E2A6E3D00D364D0 /* Debug */,
+				40E9FDB71E2A6E3D00D364D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 401696091DC8A0C400E1DF38 /* Project object */;
+	rootObject = 40E9FD7D1E2A6E3D00D364D0 /* Project object */;
 }

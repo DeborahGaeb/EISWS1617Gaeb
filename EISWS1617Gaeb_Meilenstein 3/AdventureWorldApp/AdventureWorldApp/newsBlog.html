@@ -1,0 +1,32 @@
+<!DOCTYPE HTML5>
+<html lange ="de">
+    <head>
+        <title> News Blog des AdventureWorld </title>
+        <meta http-equiv ="content-type" content = "text/html charset=UTF-8">
+            <title> News Blog </title>
+            <style>
+                .txtarea {
+                    display:  block;
+                    width: 750px;
+                    height: 400px;
+                }
+            
+                </style>
+            </head>
+    <body>
+        <textarea class="js-txtarea txtarea"></textarea>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            
+            var txtarea    = document.querySelector('.js-txtarea');
+            
+            var socket = io.connect('http://localhost:8000/newsBlog');
+            
+            socket.on('message', function (msg) {
+                      txtarea.value = txtarea.value + '\n' + msg;
+                      });
+                                                  
+            </script>
+    </body>
+</html>

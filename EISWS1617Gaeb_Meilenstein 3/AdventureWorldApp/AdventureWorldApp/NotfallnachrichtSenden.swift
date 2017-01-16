@@ -1,18 +1,23 @@
 //
-//  Startseite.swift
-//  
+//  NotfallnachrichtSenden.swift
+//  AdventureWorldApp
 //
-//  Created by Deborah Gäb on 14.01.17.
-//
+//  Created by Deborah Gäb on 16.01.17.
+//  Copyright © 2017 Deborah Gäb. All rights reserved.
 //
 
 import UIKit
 
-class Startseite: UIViewController {
+class NotfallnachrichtSenden: UIViewController {
 
+    
+    @IBOutlet weak var hintergrundbild: UIImageView!
+    @IBOutlet weak var notfallNachrichtSenden: UIButton!
+    @IBOutlet weak var MeinKindistWeg: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 

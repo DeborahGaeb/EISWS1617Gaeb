@@ -8,10 +8,13 @@
 
 import UIKit
 
+
 class Startseite: UIViewController {
 
+    @IBOutlet weak var newsBlog: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }

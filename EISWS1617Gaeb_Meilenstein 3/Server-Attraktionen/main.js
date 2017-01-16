@@ -10,7 +10,7 @@ var bodyParser = require('body-parser');
 var bayeux = new faye.NodeAdapter({mout: 'faye', timeout: 45});
 
 app.post('/wartezeitenErstellen', function (req, res) {
-	bayeux.get 
+	wzDasVerrueckteHotelTatuetat = Das verrükte Hotel Tatütat
 	
 })
 
